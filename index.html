@@ -510,28 +510,47 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
     </div>
     <div>
       <div class="contact-form">
-        <div class="form-row">
-          <div class="form-field"><label class="form-label">Your Name *</label><input type="text" class="form-input" placeholder="John Smith" id="f-name"/></div>
-          <div class="form-field"><label class="form-label">Company</label><input type="text" class="form-input" placeholder="Acme Imports Ltd"/></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label class="form-label">Email *</label><input type="email" class="form-input" placeholder="john@company.com" id="f-email"/></div>
-          <div class="form-field"><label class="form-label">Country</label><input type="text" class="form-input" placeholder="USA / UAE / UK"/></div>
-        </div>
-        <div class="form-field">
-          <label class="form-label">Product of Interest</label>
-          <select class="form-select form-input">
-            <option value="">Select a product…</option>
-            <option>Turmeric Fingers</option>
-            <option>Turmeric Powder</option>
-            <option>Moringa Powder</option>
-            <option>Moringa Seeds</option>
-          </select>
-        </div>
-        <div class="form-field"><label class="form-label">Message / Requirements</label><textarea class="form-textarea" placeholder="Tell us your quantity, packaging preference, destination port, and any quality specs…"></textarea></div>
-        <button class="form-submit" onclick="handleSubmit()">Send Inquiry →</button>
-        <div id="form-success">✅ Thank you! We'll reply within 24 hours.</div>
-      </div>
+  <div class="form-row">
+    <div class="form-field">
+      <label class="form-label" for="f-name">Your Name *</label>
+      <input type="text" class="form-input" placeholder="John Smith" id="f-name"/>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="f-company">Company</label>
+      <input type="text" class="form-input" placeholder="Acme Imports Ltd" id="f-company"/>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field">
+      <label class="form-label" for="f-email">Email *</label>
+      <input type="email" class="form-input" placeholder="john@company.com" id="f-email"/>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="f-country">Country</label>
+      <input type="text" class="form-input" placeholder="USA / UAE / UK" id="f-country"/>
+    </div>
+  </div>
+
+  <div class="form-field">
+    <label class="form-label" for="f-product">Product of Interest</label>
+    <select class="form-select form-input" id="f-product">
+      <option value="">Select a product…</option>
+      <option>Turmeric Fingers</option>
+      <option>Turmeric Powder</option>
+      <option>Moringa Powder</option>
+      <option>Moringa Seeds</option>
+    </select>
+  </div>
+
+  <div class="form-field">
+    <label class="form-label" for="f-message">Message / Requirements</label>
+    <textarea class="form-textarea" id="f-message" placeholder="Tell us your quantity, packaging preference, destination port, and any quality specs…"></textarea>
+  </div>
+
+    <button type="button" class="form-submit" onclick="handleSubmit()">Send Inquiry →</button>
+  <div id="form-success"></div>
+</div>
     </div>
   </div>
 </section>
@@ -602,23 +621,29 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
         <p class="disclaimer-note">* Prices are indicative FOB rates as of 2025 and subject to market fluctuation. Final price confirmed after sample approval. Packaging, certification, and freight quoted separately.</p>
       </div>
       <div class="price-sidebar">
-        <div class="sidebar-card reveal">
-          <div class="sidebar-card-title">🧮 Order Value Estimator</div>
-          <p>Select a product and enter quantity to get the quote.</p>
-          <div style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
-            <select class="est-input" id="est-product" onchange="updateEst()">
-              <option value="">— Select product —</option>
-              <option value="1.80">Turmeric Fingers</option>
-              <option value="2.20">Turmeric Powder</option>
-              <option value="3.50">Moringa Powder</option>
-              <option value="4.00">Moringa Seeds</option>
-            </select>
-            <input type="number" class="est-input" id="est-kgs" placeholder="Quantity in KG" min="1" oninput="updateEst()"/>
-            <p class="disclaimer-note">Estimate is indicative only. Final quote includes packaging, certification &amp; freight.</p>
-          </div>
-          <button class="sidebar-cta" onclick="goToContact()">Send an Inquiry →</button>
-        </div>
-        <div class="sidebar-card reveal">
+         <div class="sidebar-card reveal">
+  <div class="sidebar-card-title">📝 Quote Request</div>
+  <p>Select a product and enter the quantity you need. We reply with a formal quotation within 24 hours.</p>
+  <div style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+    <select class="est-input" id="est-product">
+      <option value="">— Select product —</option>
+      <option>Turmeric Fingers</option>
+      <option>Turmeric Powder</option>
+      <option>Moringa Powder</option>
+      <option>Moringa Seeds</option>
+    </select>
+    <input type="number" class="est-input" id="est-kgs" placeholder="Quantity in KG" min="1"/>
+    <input type="text" class="est-input" id="q-name" placeholder="Your name *"/>
+    <input type="email" class="est-input" id="q-email" placeholder="Email *"/>
+    <input type="text" class="est-input" id="q-country" placeholder="Destination country"/>
+    <textarea class="est-input" id="q-message" rows="3" placeholder="Packaging, destination port, quality specs…"></textarea>
+    <p class="disclaimer-note">Final quote includes packaging, certification &amp; freight.</p>
+  </div>
+  <button type="button" class="sidebar-cta" id="q-btn" onclick="handleOrderInquiry()">Send an Inquiry →</button>
+  <div id="q-success" style="display:none;margin-top:14px;padding:14px 16px;background:rgba(74,94,58,0.12);border:1px solid var(--sage);color:var(--earth);font-size:13px;line-height:1.6;"></div>
+</div>
+
+                <div class="sidebar-card reveal">
           <div class="sidebar-card-title">📦 What's Included</div>
           <ul class="sidebar-list">
             <li>NABL-certified lab COA for every batch</li>
@@ -632,6 +657,7 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
         </div>
         <div class="sidebar-card reveal">
           <div class="sidebar-card-title">🚢 Incoterms We Offer</div>
+
           <div class="incoterm-grid">
             <div class="incoterm-item"><div class="incoterm-code">FOB — Free On Board</div><div class="incoterm-desc">Risk transfers at Indian port. Best for experienced importers with their own freight forwarder.</div></div>
             <div class="incoterm-item"><div class="incoterm-code">CIF — Cost Insurance Freight</div><div class="incoterm-desc">We cover freight &amp; insurance to destination port. Recommended for new importers.</div></div>
@@ -661,7 +687,7 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
   <!-- Orders Footer -->
   <footer>
     <div class="footer-logo" onclick="showPage('main')"><img src="Primary Logo.png" alt="Lucky Aura Origins logo" class="brand-logo-img"/><span class="brand-text">Lucky Aura <span style="color:var(--turmeric)">Origins</span></span></div>
-    <div class="footer-mid">Chennai, Tamil Nadu, India<br>IEC Registered · FSSAI · APEDA · Spices Board<br>© 2025 Lucky Aura Origins. All rights reserved.</div>
+    <div class="footer-mid">Lucky Aura Origins <br>121/1, AKD Garden, Reddiyarpalayam, <br> Pondicherry, India <br>IEC Registered · FSSAI · APEDA · Spices Board<br>© 2026 Lucky Aura Origins. All rights reserved.</div>
     <div class="footer-right">
       <a href="mailto:export@luckyauraorigins.com" style="color:var(--turmeric);text-decoration:none;display:block;margin-bottom:4px;">export@luckyauraorigins.com</a>
       <a href="https://wa.me/919940111809" style="color:rgba(247,242,232,0.35);text-decoration:none;">+91 9940 111 809</a>
@@ -673,7 +699,7 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 
 <!-- FIXED BUTTONS (always visible) -->
 <button class="quote-float" onclick="showPage('orders','pricing')">Pricing & Orders</button>
-<a class="wa-float" href="https://wa.me/919940111809?text=Hi%20RK%20Origyn%20Exports%2C%20I%20am%20interested%20in%20your%20products." target="_blank" title="Chat on WhatsApp">💬</a>
+<a class="wa-float" href="https://wa.me/919940111809?text=Hi%20Lucky Aura%20Origins%20Exports%2C%20I%20am%20interested%20in%20your%20products." target="_blank" title="Chat on WhatsApp">💬</a>
 
 
 <script>
@@ -725,54 +751,87 @@ function switchOrderTab(id,btn){
   window.scrollTo({top:document.querySelector('.orders-tabs-bar').offsetTop-62,behavior:'smooth'});
 }
 
-/* ── SIDEBAR ESTIMATOR ── */
-function updateEst(){
-  const rate=parseFloat(document.getElementById('est-product').value)||0;
-  const kgs=parseFloat(document.getElementById('est-kgs').value)||0;
-  document.getElementById('s-rate').textContent=rate?'$'+rate.toFixed(2):'—';
-  document.getElementById('s-total').textContent=(rate&&kgs)?'$'+(rate*kgs).toLocaleString('en-US',{maximumFractionDigits:0}):'—';
-}
-
-/* ── QUOTE FORM ESTIMATOR ── */
-function updateEstimate(){
-  const rate=parseFloat(document.getElementById('o-product').value)||0;
-  const kgs=parseFloat(document.getElementById('o-kgs').value)||0;
-  document.getElementById('est-rate').textContent=rate?'$'+rate.toFixed(2):'—';
-  document.getElementById('est-total').textContent=(rate&&kgs)?'$'+(rate*kgs).toLocaleString('en-US',{maximumFractionDigits:0}):'—';
-}
-
-/* ── FILE UPLOAD PREVIEW ── */
-function handleUpload(e){
-  const preview=document.getElementById('upload-preview');
-  preview.innerHTML='';
-  Array.from(e.target.files).slice(0,5).forEach(f=>{
-    if(f.type.startsWith('image/')){
-      const img=document.createElement('img');img.className='preview-img';
-      img.src=URL.createObjectURL(f);preview.appendChild(img);
-    } else {
-      const d=document.createElement('div');
-      d.style.cssText='width:64px;height:64px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:24px;background:#fff;';
-      d.textContent='📄';preview.appendChild(d);
-    }
-  });
-}
-
-/* ── QUOTE FORM SUBMIT ── */
-function handleOrderSubmit(){
-  const n=document.getElementById('o-name').value.trim();
-  const e=document.getElementById('o-email').value.trim();
-  const c=document.getElementById('o-country').value.trim();
-  if(!n||!e||!c){alert('Please fill in your name, email, and destination country.');return;}
-  document.getElementById('order-success').style.display='block';
-  document.querySelector('.order-submit').style.display='none';
-}
 
 /* ── CONTACT FORM SUBMIT ── */
-function handleSubmit(){
-  const n=document.getElementById('f-name').value;
-  const e=document.getElementById('f-email').value;
-  if(!n||!e){alert('Please fill in your name and email.');return;}
-  document.getElementById('form-success').style.display='block';
+async function handleSubmit(){
+  const v = id => document.getElementById(id).value.trim();
+  const name=v('f-name'), email=v('f-email'), company=v('f-company'),
+        country=v('f-country'), product=v('f-product'), message=v('f-message');
+
+  if(!name||!email){alert('Please fill in your name and email.');return;}
+
+  const btn=document.querySelector('.form-submit');
+  const box=document.getElementById('form-success');
+  btn.disabled=true; btn.textContent='Sending…';
+
+    // 2) Email via Web3Forms
+  try{
+    const res = await fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        access_key:'cd835231-1581-4aa7-bb47-43f1559eee9a',
+        subject:'New Export Inquiry from '+name,
+        from_name:'Lucky Aura Origins Website',
+        name, email, company, country, product, message,
+        replyto: email
+      })
+    });
+    const data = await res.json();
+    if(!data.success) throw new Error(data.message);
+    box.style.display='block';
+    box.textContent="✅ Thank you for reaching out. We will review your inquiry and respond within 24 hours. For urgent matters, please contact us via WhatsApp at +91 9940 111 809.";
+    document.querySelectorAll('#contact .form-input, #contact .form-textarea').forEach(el=>el.value='');
+  }catch(err){
+    box.style.display='block';
+    box.textContent='⚠️ Could not send. Please email export@luckyauraorigins.com or use WhatsApp.';
+  }
+  btn.disabled=false; btn.textContent='Send Inquiry →';
+}
+
+/* ── ORDERS PAGE INQUIRY ── */
+async function handleOrderInquiry(){
+  const v = id => document.getElementById(id).value.trim();
+  const product=v('est-product'), kgs=v('est-kgs');
+  const name=v('q-name'), email=v('q-email'), country=v('q-country'), extra=v('q-message');
+
+  if(!product || !kgs){alert('Please select a product and enter the quantity.');return;}
+  if(!name || !email){alert('Please fill in your name and email.');return;}
+
+  const message =
+`Product: ${product}
+Quantity: ${kgs} kg
+Destination: ${country || '-'}
+
+${extra || '(no additional message)'}`;
+
+  const btn = document.getElementById('q-btn');
+  const box = document.getElementById('q-success');
+  btn.disabled = true; btn.textContent = 'Sending…';
+
+  try{
+    const res = await fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        access_key:'cd835231-1581-4aa7-bb47-43f1559eee9a',
+        subject:'New Quote Request: '+product+' ('+kgs+' kg) from '+name,
+        from_name:'Lucky Aura Origins – Orders Page',
+        name, email, country, product, message,
+        replyto: email
+      })
+    });
+    const data = await res.json();
+    if(!data.success) throw new Error(data.message);
+    box.style.display='block';
+    box.textContent="✅ Thank you. We have received your quote request and will respond within 24 hours. For urgent matters, WhatsApp us at +91 9940 111 809.";
+    ['est-product','est-kgs','q-name','q-email','q-country','q-message'].forEach(id=>document.getElementById(id).value='');
+  }catch(err){
+    console.error('Order inquiry error:', err);
+    box.style.display='block';
+    box.textContent='⚠️ Could not send ('+(err.message||'network error')+'). Please email export@luckyauraorigins.com or use WhatsApp.';
+  }
+  btn.disabled=false; btn.textContent='Send an Inquiry →';
 }
 
 /* ── MOBILE NAV ── */
@@ -784,7 +843,7 @@ function toggleMobNav(){
     Object.assign(nl.style,{display:'flex',flexDirection:'column',position:'fixed',top:'62px',left:'0',right:'0',background:'var(--warm-white)',padding:'20px 24px',borderBottom:'1px solid var(--border)',gap:'20px',zIndex:'99'});
     nl.dataset.open='1';
   }
-}
+} 
 
 /* ── SCROLL REVEAL ── */
 const revealObs=new IntersectionObserver(entries=>{
