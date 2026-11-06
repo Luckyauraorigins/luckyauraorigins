@@ -1,9 +1,19 @@
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Lucky Aura Origins — Premium Turmeric & Moringa from South India</title>
+<meta name="description" content="Lucky Aura Origins exports premium Erode turmeric and South Indian moringa with batch-wise lab reports, full export documentation and FOB, CIF and DAP terms."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Lucky Aura Origins — Premium Turmeric & Moringa from South India"/>
+<meta property="og:description" content="Export-ready Erode turmeric and South Indian moringa. Batch-wise COA, full documentation, FOB / CIF / DAP."/>
+<link rel="icon" href="Primary Logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
 :root {
   --cream:#F7F2E8;--warm-white:#FBF9EE;--turmeric:#C8841A;--turmeric-light:#E8A833;
@@ -14,7 +24,8 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--dark);overflow-x:hidden;}
-
+:focus-visible{outline:2px solid var(--turmeric);outline-offset:3px;}
+ 
 /* ── PAGE SWITCHING ── */
 #page-main,#page-orders{display:block;}
 #page-main.hidden,#page-orders.hidden{display:none;}
@@ -64,23 +75,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 60px;display:fl
 .origin-dot{display:flex;align-items:center;gap:8px;}
 .origin-dot::before{content:'';width:6px;height:6px;background:var(--turmeric);border-radius:50%;}
 
+
 /* ── COMMON SECTION ── */
-section{padding:var(--section-pad);}
+section{padding:var(--section-pad);scroll-margin-top:80px;}
 .section-label{font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--turmeric);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
 .section-label::before{content:'';display:block;width:24px;height:1px;background:var(--turmeric);}
 .section-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,54px);font-weight:600;line-height:1.1;margin-bottom:16px;}
 .section-heading em{font-style:italic;color:var(--turmeric);}
 .section-sub{font-size:15px;color:var(--text-muted);line-height:1.7;max-width:560px;margin-bottom:56px;}
-
+ 
 /* ── TRUST BAR ── */
 #trust{background:var(--cream);padding:32px 60px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .trust-item{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:500;color:var(--earth);}
 .trust-icon{font-size:20px;}
-
+ 
 /* ── PRODUCTS ── */
 #products{background:var(--warm-white);}
 .products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;}
-.product-card{background:var(--cream);padding:36px 28px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s;cursor:pointer;}
+.product-card{background:var(--cream);padding:36px 28px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s;}
 .product-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(28,23,18,0.12);}
 .product-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--turmeric);transform:scaleX(0);transition:transform 0.3s;transform-origin:left;}
 .product-card:hover::before{transform:scaleX(1);}
@@ -124,8 +136,10 @@ section{padding:var(--section-pad);}
 .market-products-col{padding-top:10px;}
 .market-certifications{margin-top:48px;}
 .cert-title{font-size:13px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;}
+.cert-title + .cert-grid + .cert-title{margin-top:32px;}
 .cert-grid{display:flex;flex-wrap:wrap;gap:10px;}
 .cert-badge{border:1px solid var(--border);padding:10px 18px;font-size:12px;font-weight:500;color:var(--earth);letter-spacing:0.04em;}
+
 
 /* ── CONTACT ── */
 #contact{background:var(--dark);color:var(--cream);padding:var(--section-pad);}
@@ -149,10 +163,11 @@ section{padding:var(--section-pad);}
 .form-submit{background:var(--turmeric);color:#fff;border:none;padding:16px 40px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;align-self:flex-start;margin-top:8px;}
 .form-submit:hover{background:var(--turmeric-light);}
 #form-success{display:none;padding:16px 20px;background:rgba(74,94,58,0.3);border:1px solid var(--sage);color:var(--cream);font-size:14px;margin-top:8px;}
-
+ 
 /* ── FOOTER (shared) ── */
 footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(247,242,232,0.08);}
 .footer-mid{font-size:12px;color:rgba(247,242,232,0.35);text-align:center;line-height:1.8;}
+.footer-mid a{color:var(--turmeric);text-decoration:none;}
 .footer-right{font-size:12px;color:rgba(247,242,232,0.35);text-align:right;}
 
 /* ── ORDERS PAGE ── */
@@ -177,10 +192,9 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 .otab-panel{display:none;padding:72px 60px;}
 .otab-panel.active{display:block;}
 #otab-pricing{background:var(--warm-white);}
-#otab-quote{background:var(--cream);}
 #otab-terms{background:var(--warm-white);}
-
-/* Price table */
+ 
+/* Product table */
 .price-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
 .price-table{width:100%;border-collapse:collapse;}
 .price-table thead tr{background:var(--dark);color:var(--cream);}
@@ -190,9 +204,6 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 .price-table td{padding:16px 18px;font-size:14px;vertical-align:middle;}
 .price-table td:first-child{font-weight:500;}
 .price-moq{font-size:11px;color:var(--text-muted);margin-top:3px;}
-.price-val{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--turmeric);}
-.price-unit{font-size:11px;color:var(--text-muted);margin-top:1px;}
-.price-note{font-size:11px;color:var(--sage-light);margin-top:2px;}
 .disclaimer-note{font-size:11px;color:var(--text-muted);margin-top:14px;line-height:1.6;}
 
 /* Sidebar cards */
@@ -210,56 +221,10 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 .sidebar-cta{background:var(--turmeric);color:#fff;border:none;padding:14px 28px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;display:block;width:100%;text-align:center;margin-top:16px;}
 .sidebar-cta:hover{background:var(--earth);}
 
-/* Estimator inputs */
+/* Quote form inputs */
 .est-input{background:#fff;border:1px solid var(--border);color:var(--dark);padding:13px 16px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s;appearance:none;-webkit-appearance:none;width:100%;}
 .est-input:focus{border-color:var(--turmeric);}
 .est-input option{background:#fff;}
-.est-boxes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px;}
-.est-box{background:var(--warm-white);border:1px solid var(--border);padding:13px 16px;display:flex;flex-direction:column;gap:3px;}
-.est-label{font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);}
-.est-val{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--turmeric);}
-
-/* Quote form */
-.quote-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-.order-form-wrap{background:var(--warm-white);border:1px solid var(--border);padding:44px;}
-.order-form-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;margin-bottom:6px;}
-.order-form-sub{font-size:13px;color:var(--text-muted);margin-bottom:32px;line-height:1.65;}
-.order-form{display:flex;flex-direction:column;gap:18px;}
-.order-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.order-field{display:flex;flex-direction:column;gap:7px;}
-.order-label{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);}
-.order-input,.order-select,.order-textarea{background:#fff;border:1px solid var(--border);color:var(--dark);padding:13px 16px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s;appearance:none;-webkit-appearance:none;}
-.order-input::placeholder,.order-textarea::placeholder{color:rgba(107,78,42,0.35);}
-.order-input:focus,.order-select:focus,.order-textarea:focus{border-color:var(--turmeric);}
-.order-textarea{resize:vertical;min-height:100px;}
-.order-select option{background:#fff;}
-.kgs-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:end;}
-.kgs-est-box{background:var(--cream);border:1px solid var(--border);padding:13px 16px;display:flex;flex-direction:column;gap:3px;}
-.upload-zone{border:2px dashed var(--border);padding:28px 20px;text-align:center;cursor:pointer;transition:border-color 0.2s,background 0.2s;position:relative;}
-.upload-zone:hover{border-color:var(--turmeric);background:rgba(200,132,26,0.03);}
-.upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
-.upload-icon{font-size:28px;margin-bottom:8px;}
-.upload-text{font-size:13px;font-weight:500;color:var(--earth);}
-.upload-hint{font-size:11px;color:var(--text-muted);margin-top:4px;}
-.upload-preview{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
-.preview-img{width:64px;height:64px;object-fit:cover;border:1px solid var(--border);}
-.order-submit{background:var(--turmeric);color:#fff;border:none;padding:16px 40px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;display:flex;align-items:center;gap:10px;align-self:flex-start;margin-top:4px;}
-.order-submit:hover{background:var(--earth);}
-#order-success{display:none;padding:14px 20px;background:rgba(74,94,58,0.1);border:1px solid var(--sage);color:var(--sage);font-size:14px;margin-top:6px;}
-
-/* Quote info sidebar */
-.quote-info{display:flex;flex-direction:column;gap:24px;}
-.qi-card{background:var(--warm-white);border:1px solid var(--border);padding:28px;}
-.qi-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;margin-bottom:10px;}
-.qi-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:4px;}
-.qi-list li{font-size:13px;color:var(--text-muted);display:flex;align-items:flex-start;gap:10px;line-height:1.5;}
-.qi-num{width:22px;height:22px;border-radius:50%;background:var(--turmeric);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.qi-contact{background:var(--dark);padding:28px;}
-.qi-contact-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--cream);margin-bottom:16px;}
-.qi-contact-item{margin-bottom:12px;}
-.qi-contact-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,242,232,0.4);margin-bottom:3px;}
-.qi-contact-val{font-size:14px;color:var(--cream);}
-.qi-contact-val a{color:var(--turmeric-light);text-decoration:none;}
 
 /* Terms grid */
 .terms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
@@ -268,13 +233,46 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 .term-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;margin-bottom:10px;}
 .term-body{font-size:13px;color:var(--text-muted);line-height:1.7;}
 .term-body strong{color:var(--earth);font-weight:500;}
+.term-body a,.guide-v a{color:var(--turmeric);text-decoration:none;border-bottom:1px solid var(--turmeric);cursor:pointer;}
+
+/* ── BENEFITS BUTTON + MODAL ── */
+.benefit-btn{background:transparent;border:1px solid var(--turmeric);color:var(--turmeric);padding:8px 16px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:background 0.2s,color 0.2s;white-space:nowrap;}
+.benefit-btn:hover{background:var(--turmeric);color:#fff;}
+.benefit-overlay{position:fixed;inset:0;background:rgba(28,23,18,0.65);display:none;align-items:center;justify-content:center;z-index:300;padding:20px;}
+.benefit-overlay.open{display:flex;}
+.benefit-modal{background:var(--warm-white);max-width:520px;width:100%;max-height:85vh;overflow-y:auto;padding:40px 36px;position:relative;border-top:3px solid var(--turmeric);}
+.benefit-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-muted);line-height:1;}
+.benefit-close:hover{color:var(--turmeric);}
+.benefit-eyebrow{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--turmeric);margin-bottom:8px;}
+.benefit-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;margin-bottom:18px;}
+.benefit-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.benefit-list li{font-size:14px;color:var(--text-muted);line-height:1.6;display:flex;gap:10px;}
+.benefit-list li::before{content:'✓';color:var(--sage);font-weight:700;flex-shrink:0;}
+.benefit-note{font-size:11px;color:var(--text-muted);margin-top:18px;line-height:1.6;}
+ 
+/* ── IMPORTER'S GUIDE ── */
+.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:56px;}
+.guide-card{background:var(--warm-white);border:1px solid var(--border);padding:24px 22px;}
+.guide-k{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--turmeric);margin-bottom:8px;font-weight:500;}
+.guide-v{font-size:14px;color:var(--dark);line-height:1.55;}
+.guide-h{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;margin:48px 0 20px;}
+.guide-table-wrap{overflow-x:auto;}
+.guide-table{width:100%;border-collapse:collapse;background:var(--warm-white);}
+.guide-table thead tr{background:var(--dark);color:var(--cream);}
+.guide-table th{padding:14px 18px;text-align:left;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;}
+.guide-table td{padding:14px 18px;font-size:14px;border-bottom:1px solid var(--border);color:var(--text-muted);}
+.guide-table td:first-child{font-weight:500;color:var(--dark);}
+.guide-docs{display:flex;flex-wrap:wrap;gap:10px;}
+@media(max-width:900px){
+  .guide-grid{grid-template-columns:1fr 1fr;}
+}
 
 /* ── FIXED BUTTONS ── */
 .quote-float{position:fixed;right:0;top:50%;transform:translateY(-50%) rotate(90deg);transform-origin:right center;background:var(--turmeric);color:#fff;padding:12px 24px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;z-index:150;border-radius:0 0 6px 6px;box-shadow:-3px 0 20px rgba(200,132,26,0.3);transition:background 0.2s,padding 0.2s;white-space:nowrap;border:none;cursor:pointer;}
 .quote-float:hover{background:var(--earth);padding:14px 28px;}
 .wa-float{position:fixed;bottom:32px;right:32px;z-index:200;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform 0.2s;}
 .wa-float:hover{transform:scale(1.08);}
-
+ 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
 .animate{animation:fadeUp 0.7s ease forwards;}
@@ -286,28 +284,30 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 
 /* ── MOBILE ── */
 @media(max-width:900px){
-  nav{padding:16px 24px;}
-  .nav-links,.nav-cta{display:none;}
+  nav{padding:12px 20px;gap:10px;}
+  .brand-text{font-size:17px;}
+  .nav-logo .brand-logo-img{height:40px;}
+  .nav-links{display:none;}
+  .nav-cta{padding:9px 14px;font-size:11px;margin-left:auto;}
   .mob-toggle{display:block;}
   #hero{grid-template-columns:1fr;min-height:auto;padding-top:70px;}
   .hero-left{padding:60px 24px 40px;}
   .hero-right{min-height:280px;}
-  .hero-origin-strip{padding:14px 24px;gap:20px;flex-wrap:wrap;}
+  .hero-origin-strip{position:static;padding:14px 24px;gap:20px;flex-wrap:wrap;}
   section{padding:64px 24px;}
-  #trust{flex-direction:column;gap:16px;padding:24px;}
+  #trust{flex-direction:column;align-items:flex-start;gap:16px;padding:24px;}
   .products-grid{grid-template-columns:1fr;}
   .why-grid{grid-template-columns:1fr;}
   .process-steps{grid-template-columns:1fr 1fr;gap:24px;}
   .process-steps::before{display:none;}
-  .markets-layout,.contact-layout{grid-template-columns:1fr;}
+  .markets-layout,.contact-layout{grid-template-columns:1fr;gap:48px;}
   .form-row{grid-template-columns:1fr;}
   footer{flex-direction:column;gap:16px;text-align:center;padding:32px 24px;}
   .footer-right{text-align:center;}
   .orders-page-hero{padding:52px 24px 44px;}
   .orders-tabs-bar{padding:0 20px;overflow-x:auto;}
   .otab-panel{padding:52px 24px;}
-  .price-layout,.quote-layout{grid-template-columns:1fr;}
-  .order-row,.kgs-row,.est-boxes{grid-template-columns:1fr;}
+  .price-layout{grid-template-columns:1fr;}
   .terms-grid{grid-template-columns:1fr;}
 }
 </style>
@@ -321,83 +321,87 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
   <div class="nav-logo" onclick="showPage('main')"><img src="Primary Logo.png" alt="Lucky Aura Origins logo" class="brand-logo-img"/><span class="brand-text">Lucky Aura <span>Origins</span></span></div>
   <!-- Main site nav links -->
   <ul class="nav-links" id="nav-main-links">
-    <li><a href="#products" onclick="showPage('main')">Products</a></li>
-    <li><a href="#why" onclick="showPage('main')">Why Us</a></li>
-    <li><a href="#process" onclick="showPage('main')">Process</a></li>
-    <li><a href="#markets" onclick="showPage('main')">Markets</a></li>
-    <li><a href="javascript:void(0)" onclick="showPage('orders','pricing')">Orders</a></li>
-    <li><a href="#contact" onclick="showPage('main')">Contact</a></li>
+    <li><a href="#products" onclick="navTo(event,'products')">Products</a></li>
+    <li><a href="#why" onclick="navTo(event,'why')">Why Us</a></li>
+    <li><a href="#process" onclick="navTo(event,'process')">Process</a></li>
+    <li><a href="#guide" onclick="navTo(event,'guide')">Importer's Guide</a></li>
+    <li><a href="#markets" onclick="navTo(event,'markets')">Markets</a></li>
+    <li><a href="#orders" onclick="event.preventDefault();closeMobNav();showPage('orders','pricing')">Orders</a></li>
+    <li><a href="#contact" onclick="navTo(event,'contact')">Contact</a></li>
   </ul>
   <!-- Orders page back link (hidden by default) -->
   <button class="nav-back" id="nav-back-btn" onclick="showPage('main')">Back to Main Site</button>
-  <button class="nav-cta" onclick="showPage('orders','pricing')">Get a Quote</button>
-  <button class="mob-toggle" onclick="toggleMobNav()">☰</button>
+  <button class="nav-cta" onclick="closeMobNav();showPage('orders','pricing')">Request a Quote</button>
+  <button class="mob-toggle" id="mob-toggle" onclick="toggleMobNav()" aria-label="Open menu" aria-expanded="false" aria-controls="nav-main-links">☰</button>
 </nav>
-
+ 
 <!-- ═══════════════════════════════════════════
      PAGE: MAIN SITE
 ═══════════════════════════════════════════ -->
 <div id="page-main">
+ 
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow animate">South India's Finest, Delivered Global</div>
+    <div class="hero-eyebrow animate">From South India's Farms</div>
     <h1 class="hero-heading animate delay1">
-      Pure Turmeric.<br>
-      <em>Premium</em> Moringa.<br>
-      World-Ready.
+      <em>Premium</em> Turmeric &<br>
+      <em>Pure</em> Moringa<br>
+      World-Ready!
     </h1>
     <p class="hero-sub animate delay2">
-      Lucku Aura Origins sources high-curcumin Erode turmeric and superfood-grade moringa directly from South India's finest farms — certified, compliant, and export-ready.
+      Premium turmeric and pure moringa, sourced directly from South India's farms.
+      Lucky Aura Origins brings you carefully selected natural products from the region's most trusted farming areas, delivered to markets around the world.
     </p>
     <div class="hero-actions animate delay3">
-      <button class="btn-primary" onclick="showPage('orders','pricing')">Request Quote</button>
-      <a href="#products" class="btn-outline">View Products</a>
+      <button class="btn-primary" onclick="showPage('orders','pricing')">Request a Quote</button>
+      <a href="#products" class="btn-outline" onclick="navTo(event,'products')">View Products</a>
     </div>
   </div>
-  <div class="hero-right">
+ <div class="hero-right">
     <div class="hero-pattern"></div>
     <div class="hero-visual">
       <div class="hero-badge-group">
-        <div class="hero-badge reveal"><div class="hero-badge-num">2</div><div class="hero-badge-label">Flagship export products</div></div>
-        <div class="hero-badge reveal"><div class="hero-badge-num">100%</div><div class="hero-badge-label">Traceable farm origins</div></div>
+        <div class="hero-badge reveal"><div class="hero-badge-num">2</div><div class="hero-badge-label">Flagship Export Products</div></div>
+        <div class="hero-badge reveal"><div class="hero-badge-num">100%</div><div class="hero-badge-label">Traceable Farm Origins</div></div>
         <div class="hero-badge reveal"><div class="hero-badge-num">FOB</div><div class="hero-badge-label">Chennai · Pondicherry</div></div>
       </div>
     </div>
   </div>
   <div class="hero-origin-strip">
     <div class="origin-dot">Erode Turmeric</div>
-    <div class="origin-dot">High Curcumin 3+%</div>
+    <div class="origin-dot">High Curcumin 3–5%</div>
     <div class="origin-dot">South Indian Moringa</div>
-    <div class="origin-dot">Superfood Grade</div>
-    <div class="origin-dot">NABL Lab Tested</div>
+    <div class="origin-dot">Food Grade</div>
+    <div class="origin-dot">Private Label Available</div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
+<<!-- TRUST BAR -->
 <div id="trust">
   <div class="trust-item"><span class="trust-icon">🏛️</span> IEC Registered Exporter</div>
   <div class="trust-item"><span class="trust-icon">✅</span> FSSAI Compliant</div>
-  <div class="trust-item"><span class="trust-icon">🌿</span> APEDA Affiliated</div>
+  <div class="trust-item"><span class="trust-icon">🌿</span> APEDA Registered</div>
   <div class="trust-item"><span class="trust-icon">🔬</span> NABL Lab Tested</div>
   <div class="trust-item"><span class="trust-icon">📦</span> FOB · CIF · DAP</div>
   <div class="trust-item"><span class="trust-icon">🛡️</span> LUT / GST Zero-rated</div>
 </div>
 
+
 <!-- PRODUCTS -->
 <section id="products">
   <div class="section-label">Our Products</div>
-  <h2 class="section-heading">Farm-to-Export <em>Catalogue</em></h2>
-  <p class="section-sub">Sourced from the farming regions of South India and packed for export. Every shipment comes with a Certificate of Analysis.</p>
+  <h2 class="section-heading">Farm-to-Export <em>Product Catalogue</em></h2>
+  <p class="section-sub">Sourced from trusted farms across South India and packed for global markets. Every shipment is backed by a batch-specific Certificate of Analysis.</p>
   <div class="products-grid">
     <div class="product-card reveal">
-      <img src="/images/turmeric.jpg" alt="Erode Turmeric" class="product-img"
+      <img src="images/turmeric.jpg" alt="Erode Turmeric" class="product-img"
      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
 <div class="product-img-placeholder" style="display:none">🌿</div>
       <div class="product-origin">Erode, Tamil Nadu</div>
       <div class="product-name">Turmeric</div>
-      <p class="product-desc">Erode turmeric in whole finger, polished finger and powder forms. Curcumin content per lab report (3-5%). Suited to food manufacturers, spice blenders and nutraceutical brands. Organic on request (if certified).</p>
+      <p class="product-desc">Erode turmeric in whole finger, polished finger and powder forms. Curcumin content per lab report (3–5%). Suited to food manufacturers, spice blenders and nutraceutical brands. Organic available on request (subject to certification).</p>
       <div class="product-tags">
         <span class="tag">COA WITH EVERY BATCH</span>
         <span class="tag">ORGANIC ON REQUEST</span>
@@ -405,12 +409,12 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
       </div>
     </div>
     <div class="product-card reveal">
-      <img src="/images/moringa.jpg" alt="South Indian Moringa" class="product-img"
+      <img src="images/moringa.jpg" alt="South Indian Moringa" class="product-img"
      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
 <div class="product-img-placeholder" style="display:none">🌱</div>
       <div class="product-origin">South Tamil Nadu</div>
       <div class="product-name">Moringa</div>
-      <p class="product-desc">Drumstick leaf powder, pods, and seeds. Rich in iron, vitamin C, and protein. Growing export demand in Europe and GCC markets. Halal and EU MRL compliant.</p>
+      <p class="product-desc">Drumstick leaf powder, pods and seeds. Rich in iron, vitamin C and protein. Growing export demand in Europe and GCC markets. Halal documentation available, with testing to EU MRL requirements.</p>
       <div class="product-tags">
         <span class="tag">FOOD GRADE</span>
         <span class="tag">HALAL DOCUMENTATION</span>
@@ -424,14 +428,14 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 <section id="why">
   <div class="section-label">Why Lucky Aura Origins</div>
   <h2 class="section-heading">Built for <em>Serious</em> Buyers</h2>
-  <p class="section-sub">We're not middlemen. We are hands-on partners who handle sourcing, compliance, documentation, and logistics — so you get clean, consistent supply.</p>
+  <p class="section-sub">We're not middlemen. We are hands-on partners who handle sourcing, compliance, documentation and logistics, so you get clean, consistent supply.</p>
   <div class="why-grid">
-    <div class="why-card reveal"><div class="why-num">01</div><div class="why-title">Traceable Farm Origins</div><p class="why-text">Every product is sourced from identified farms and cooperatives across South India. We provide origin certificates, farm location maps, and harvest batch records on request.</p></div>
-    <div class="why-card reveal"><div class="why-num">02</div><div class="why-title">Full Compliance Handling</div><p class="why-text">IEC, APEDA, FSSAI, Spices Board CRES, Phytosanitary, COA from NABL labs — we manage every document your buyer or customs authority needs, end to end.</p></div>
-    <div class="why-card reveal"><div class="why-num">03</div><div class="why-title">Flexible MOQ & Incoterms</div><p class="why-text">New to Indian imports? We offer trial shipments and sample packs. We work on FOB, CIF, and DAP terms, with ports at Chennai, Pondicherry.</p></div>
-    <div class="why-card reveal"><div class="why-num">04</div><div class="why-title">Lab-Tested Every Batch</div><p class="why-text">All products are tested at NABL-accredited labs for pesticide residues, aflatoxins, moisture, and heavy metals before shipment. COA shared with every order.</p></div>
-    <div class="why-card reveal"><div class="why-num">05</div><div class="why-title">Export-Ready Packaging</div><p class="why-text">Private label, bulk, and retail-ready packs available. We handle moisture-proof packaging, vacuum sealing, and carton markings as per destination-market specs.</p></div>
-    <div class="why-card reveal"><div class="why-num">06</div><div class="why-title">Responsive Communication</div><p class="why-text">Direct contact with the founders — Rajesh Kanna and Divia No call centers, no delays. WhatsApp, email, or video call — we move at your pace.</p></div>
+    <div class="why-card reveal"><div class="why-num">01</div><div class="why-title">Traceable Farm Origins</div><p class="why-text">Every product is sourced from identified farms and cooperatives across South India. We provide origin certificates, farm location maps and harvest batch records on request.</p></div>
+    <div class="why-card reveal"><div class="why-num">02</div><div class="why-title">Full Compliance Handling</div><p class="why-text">We manage the export paperwork end to end, from phytosanitary and origin certificates to lab COAs, Every document is prepared to meet your import requirements and support smooth customs clearance at your destination</p></div>
+    <div class="why-card reveal"><div class="why-num">03</div><div class="why-title">Flexible Orders</div><p class="why-text">New to Indian imports? We offer trial shipments and sample packs, and we ship from the ports of Chennai and Pondicherry. Minimum order quantity is confirmed in your quote.</p></div>
+    <div class="why-card reveal"><div class="why-num">04</div><div class="why-title">Lab-Tested Every Batch</div><p class="why-text">All products are tested at NABL-accredited labs for pesticide residues, aflatoxins, moisture and heavy metals before shipment. The COA is shared with every order.</p></div>
+    <div class="why-card reveal"><div class="why-num">05</div><div class="why-title">Export-Ready Packaging</div><p class="why-text">Private label, bulk and retail-ready packs are available. We handle moisture-proof packaging, vacuum sealing and carton markings to meet destination-market specifications.</p></div>
+    <div class="why-card reveal"><div class="why-num">06</div><div class="why-title">Responsive Communication</div><p class="why-text">Direct contact with the founders, Rajesh Kanna and Divia. No call centres, no delays. WhatsApp, email or video call, we move at your pace.</p></div>
   </div>
 </section>
 
@@ -439,54 +443,105 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
 <section id="process">
   <div class="section-label">How It Works</div>
   <h2 class="section-heading">From Inquiry to <em>Delivery</em></h2>
-  <p class="section-sub">A streamlined 5-step process designed to make your first — and every — import from India smooth and risk-free.</p>
+  <p class="section-sub">A streamlined 5-step process designed to make your first import from India, and every one after it, smooth and well documented.</p>
   <div class="process-steps">
-    <div class="process-step reveal"><div class="step-num">1</div><div class="step-title">Send Inquiry</div><p class="step-text">Tell us your product, quantity, destination, and quality specs via our contact form or WhatsApp.</p></div>
+    <div class="process-step reveal"><div class="step-num">1</div><div class="step-title">Send Inquiry</div><p class="step-text">Tell us your product, quantity, destination and quality specs via our contact form or WhatsApp.</p></div>
     <div class="process-step reveal"><div class="step-num">2</div><div class="step-title">Sample Dispatch</div><p class="step-text">We ship lab-tested samples with COA and origin details. Evaluate before you commit.</p></div>
-    <div class="process-step reveal"><div class="step-num">3</div><div class="step-title">Quote & Agreement</div><p class="step-text">Receive a detailed FOB/CIF quote with Incoterms, delivery timeline, and payment terms.</p></div>
-    <div class="process-step reveal"><div class="step-num">4</div><div class="step-title">Production & Docs</div><p class="step-text">Order is packed, final lab test done, all export documents prepared — Phytosanitary, COO, Invoice, Packing List.</p></div>
-    <div class="process-step reveal"><div class="step-num">5</div><div class="step-title">Shipment & Tracking</div><p class="step-text">Cargo loaded at port. B/L shared. We stay in touch until your goods clear customs at the destination.</p></div>
+    <div class="process-step reveal"><div class="step-num">3</div><div class="step-title">Quote & Agreement</div><p class="step-text">Receive a detailed FOB, CIF or DAP quote with delivery timeline and payment terms.</p></div>
+    <div class="process-step reveal"><div class="step-num">4</div><div class="step-title">Production & Docs</div><p class="step-text">Your order is packed, the final lab test is completed and all export documents are prepared.</p></div>
+    <div class="process-step reveal"><div class="step-num">5</div><div class="step-title">Shipment & Tracking</div><p class="step-text">Cargo is loaded at port and the B/L is shared. We stay in touch until your goods clear customs at the destination.</p></div>
   </div>
 </section>
 
+<!-- IMPORTER'S GUIDE -->
+<section id="guide" style="background:var(--cream);">
+  <div class="section-label">Importer's Guide</div>
+  <h2 class="section-heading">Everything You Need to <em>Import with Confidence</em></h2>
+  <p class="section-sub">A quick, plain-language summary of how buying from Lucky Aura Origins works, so you can compare us with other suppliers.</p>
+ 
+  <!-- At a glance -->
+  <div class="guide-grid">
+    <div class="guide-card reveal"><div class="guide-k">Products</div><div class="guide-v">Turmeric (fingers, powder) and Moringa (leaf powder, seeds)</div></div>
+    <div class="guide-card reveal"><div class="guide-k">Origin</div><div class="guide-v">Erode and South Tamil Nadu, India</div></div>
+    <div class="guide-card reveal"><div class="guide-k">Standard Packing</div><div class="guide-v">25 kg food-grade PP/HDPE bags in cartons. Private label and retail packs available</div></div>
+    <div class="guide-card reveal"><div class="guide-k">Loading Ports</div><div class="guide-v">Chennai and Pondicherry</div></div>
+    <div class="guide-card reveal"><div class="guide-k">Shipping Terms</div><div class="guide-v">FOB, CIF and DAP, depending on your requirement</div></div>
+    <div class="guide-card reveal"><div class="guide-k">Payment Terms</div><div class="guide-v">Terms for new and repeat buyers are listed under <a onclick="showPage('orders','terms')">Payment &amp; Terms</a></div></div>
+    <div class="guide-card reveal"><div class="guide-k">Samples</div><div class="guide-v">Available on request, with COA</div></div>
+    <div class="guide-card reveal"><div class="guide-k">Quote Turnaround</div><div class="guide-v">Within 24 hours of your inquiry</div></div>
+  </div>
+
+  <!-- Specs table -->
+  <h3 class="guide-h">Product Snapshot</h3>
+  <div class="guide-table-wrap">
+    <table class="guide-table">
+      <thead><tr><th>Product</th><th>Form</th><th>Key Specification</th><th>Common Uses</th></tr></thead>
+      <tbody>
+        <tr><td>Turmeric Fingers</td><td>Whole, polished</td><td>Curcumin as per batch lab report</td><td>Grinding, extraction, spice and herbal industry</td></tr>
+        <tr><td>Turmeric Powder</td><td>Fine powder</td><td>Curcumin 3–5% (per lab report)</td><td>Spice blends, sauces, supplements, beverages</td></tr>
+        <tr><td>Moringa Powder</td><td>Dried leaf powder</td><td>Moisture, residues and microbial results per COA</td><td>Smoothies, tea, capsules, bakery, fortified foods</td></tr>
+        <tr><td>Moringa Seeds</td><td>Dried and cleaned</td><td>Purity and moisture per lab report</td><td>Oil extraction, cosmetics, sowing</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="disclaimer-note">Typical values only. The exact specification of each lot is confirmed on its Certificate of Analysis (COA) before shipment.</p>
+
+  <!-- Documents -->
+  <h3 class="guide-h">Documents You Receive With Every Shipment</h3>
+  <div class="guide-docs">
+    <span class="cert-badge">Commercial Invoice</span>
+    <span class="cert-badge">Packing List</span>
+    <span class="cert-badge">Bill of Lading</span>
+    <span class="cert-badge">Certificate of Origin</span>
+    <span class="cert-badge">Phytosanitary Certificate</span>
+    <span class="cert-badge">NABL Lab COA</span>
+    <span class="cert-badge">FSSAI Certificate</span>
+    <span class="cert-badge">Destination-specific certificates</span>
+  </div>
+ 
+</section>
+
+<
 <!-- MARKETS -->
 <section id="markets">
   <div class="markets-layout">
     <div>
       <div class="section-label">Export Markets</div>
       <h2 class="section-heading">Where We <em>Ship</em></h2>
-      <p class="section-sub">Exporting premium turmeric and moringa from India to buyers in the US, Europe, the Middle East, the UK and Southeast Asia. Don’t see your country? Contact us.</p>
+      <p class="section-sub">Exporting premium turmeric and moringa from India to buyers in the US, Europe, the Middle East, the UK and Southeast Asia. Don't see your country? Contact us.</p>
       <div class="market-list">
         <div class="market-item reveal"><div><div class="market-name">United States</div><div class="market-region">Documentation per US import requirements · Lab reports on request</div></div><div class="market-flag">🇺🇸</div></div>
         <div class="market-item reveal"><div><div class="market-name">European Union</div><div class="market-region">EU-standard quality testing · Documentation on request</div></div><div class="market-flag">🇪🇺</div></div>
-        <div class="market-item reveal"><div><div class="market-name">GCC / Middle East</div><div class="market-region">Export documentation supported (Halal) · UAE, Saudi, Qatar</div></div><div class="market-flag">🇦🇪</div></div>
+        <div class="market-item reveal"><div><div class="market-name">GCC / Middle East</div><div class="market-region">Halal documentation available · UAE, Saudi Arabia, Qatar</div></div><div class="market-flag">🇦🇪</div></div>
         <div class="market-item reveal"><div><div class="market-name">United Kingdom</div><div class="market-region">UK import documentation supported</div></div><div class="market-flag">🇬🇧</div></div>
         <div class="market-item reveal"><div><div class="market-name">Southeast Asia</div><div class="market-region">Singapore · Malaysia · Indonesia</div></div><div class="market-flag">🌏</div></div>
       </div>
     </div>
     <div class="market-products-col">
-      <div class="section-label" style="margin-top:10px">Certifications & Compliance</div>
+      <div class="section-label" style="margin-top:10px">Registrations & Certifications</div>
       <h3 class="section-heading" style="font-size:32px;">Trade-Ready <em>Documents</em></h3>
       <p class="section-sub" style="font-size:14px;margin-bottom:36px;">We handle the paperwork so your shipment clears customs without delays.</p>
       <div class="market-certifications">
-        <div class="cert-title">Certifications we provide</div>
+        <div class="cert-title">Registrations &amp; certificates</div>
         <div class="cert-grid">
           <div class="cert-badge reveal">IEC – DGFT</div>
           <div class="cert-badge reveal">FSSAI</div>
           <div class="cert-badge reveal">APEDA</div>
           <div class="cert-badge reveal">Spices Board CRES</div>
-          <div class="cert-badge reveal">Phytosanitary Cert</div>
+          <div class="cert-badge reveal">Phytosanitary Certificate</div>
           <div class="cert-badge reveal">Certificate of Origin</div>
           <div class="cert-badge reveal">NABL Lab COA</div>
           <div class="cert-badge reveal">Halal Certificate</div>
+        </div>
+        <div class="cert-title">Export tax benefits</div>
+        <div class="cert-grid">
           <div class="cert-badge reveal">LUT / GST Zero-rated</div>
           <div class="cert-badge reveal">RoDTEP Eligible</div>
         </div>
       </div>
       <div style="margin-top:48px;padding:28px;background:var(--cream);border-left:3px solid var(--turmeric);">
-        <p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;line-height:1.6;color:var(--earth);">"From farm to foreign port — we don't just ship products. We ship trust."</p>
-        <p style="font-size:12px;margin-top:12px;color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase;">— Rajesh Kanna RR, Founder {Managing Director}</p>
-        <p style="font-size:12px;margin-top:12px;color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase;">— Divia AS, Co-Founder {Operations Director}</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;line-height:1.6;color:var(--earth);">"From farm to foreign port, we don't just ship products. We ship trust."</p>
+        <p style="font-size:12px;margin-top:12px;color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase;">— The Founders: Rajesh Kanna RR, Founder &amp; Managing Director · Divia AS, Co-Founder &amp; Operations Director</p>
       </div>
     </div>
   </div>
@@ -498,71 +553,71 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
     <div>
       <div class="section-label">Get in Touch</div>
       <h2 class="section-heading">Start Your <em>Sourcing</em> Journey</h2>
-      <p style="font-size:15px;line-height:1.7;color:rgba(247,242,232,0.6);max-width:400px;margin-bottom:48px;">Whether you need a sample, a bulk quote, or just want to understand what's possible — reach out directly. We respond within 24 hours.</p>
+      <p style="font-size:15px;line-height:1.7;color:rgba(247,242,232,0.6);max-width:400px;margin-bottom:48px;">Whether you need a sample, a bulk quote, or just want to understand what's possible, reach out directly. We respond within 24 hours.</p>
       <div class="contact-info">
         <div><div class="contact-item-label">Email</div><div class="contact-item-val"><a href="mailto:export@luckyauraorigins.com">export@luckyauraorigins.com</a></div></div>
         <div><div class="contact-item-label">WhatsApp / Phone</div><div class="contact-item-val"><a href="https://wa.me/919940111809">+91 9940 111 809</a></div></div>
         <div><div class="contact-item-label">Base of Operations</div><div class="contact-item-val">Pondicherry, India</div></div>
-        <div><div class="contact-item-label">Export Ports</div><div class="contact-item-val">Chennai · Pondicherry</div></div>
       </div>
     </div>
     <div>
       <div class="contact-form">
-  <div class="form-row">
-    <div class="form-field">
-      <label class="form-label" for="f-name">Your Name *</label>
-      <input type="text" class="form-input" placeholder="John Smith" id="f-name"/>
-    </div>
-    <div class="form-field">
-      <label class="form-label" for="f-company">Company</label>
-      <input type="text" class="form-input" placeholder="Acme Imports Ltd" id="f-company"/>
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-field">
-      <label class="form-label" for="f-email">Email *</label>
-      <input type="email" class="form-input" placeholder="john@company.com" id="f-email"/>
-    </div>
-    <div class="form-field">
-      <label class="form-label" for="f-country">Country</label>
-      <input type="text" class="form-input" placeholder="USA / UAE / UK" id="f-country"/>
-    </div>
-  </div>
-
-  <div class="form-field">
-    <label class="form-label" for="f-product">Product of Interest</label>
-    <select class="form-select form-input" id="f-product">
-      <option value="">Select a product…</option>
-      <option>Turmeric Fingers</option>
-      <option>Turmeric Powder</option>
-      <option>Moringa Powder</option>
-      <option>Moringa Seeds</option>
-    </select>
-  </div>
-
-  <div class="form-field">
-    <label class="form-label" for="f-message">Message / Requirements</label>
-    <textarea class="form-textarea" id="f-message" placeholder="Tell us your quantity, packaging preference, destination port, and any quality specs…"></textarea>
-  </div>
-
-    <button type="button" class="form-submit" onclick="handleSubmit()">Send Inquiry →</button>
-  <div id="form-success"></div>
-</div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="f-name">Your Name *</label>
+            <input type="text" class="form-input" placeholder="John Smith" id="f-name"/>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="f-company">Company</label>
+            <input type="text" class="form-input" placeholder="Acme Imports Ltd" id="f-company"/>
+          </div>
+        </div>
+ 
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="f-email">Email *</label>
+            <input type="email" class="form-input" placeholder="john@company.com" id="f-email"/>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="f-country">Country</label>
+            <input type="text" class="form-input" placeholder="USA / UAE / UK" id="f-country"/>
+          </div>
+        </div>
+ 
+        <div class="form-field">
+          <label class="form-label" for="f-product">Product of Interest</label>
+          <select class="form-select form-input" id="f-product">
+            <option value="">Select a product…</option>
+            <option>Turmeric Fingers</option>
+            <option>Turmeric Powder</option>
+            <option>Moringa Powder</option>
+            <option>Moringa Seeds</option>
+          </select>
+        </div>
+ 
+        <div class="form-field">
+          <label class="form-label" for="f-message">Message / Requirements</label>
+          <textarea class="form-textarea" id="f-message" placeholder="Tell us your quantity, packaging preference, destination port and any quality specs…"></textarea>
+        </div>
+ 
+        <button type="button" class="form-submit" onclick="handleSubmit()">Send Inquiry →</button>
+        <div id="form-success"></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- MAIN FOOTER -->
 <footer>
-  <div class="footer-logo" onclick="showPage('main')"><img src="Primary Logo.png" alt=Lucky Aura Origins logo" class="brand-logo-img"/><span class="brand-text">Lucky Aura <span style="color:var(--turmeric)">Origins</span></span></div>
-  <div class="footer-mid">Lucky Aura Origins <br>121/1, AKD Garden, Reddiyarpalayam, <br> Pondicherry, India <br>IEC Registered · FSSAI · APEDA · Spices Board<br>© 2026 Lucky Aura Origins. All rights reserved.</div>
+  <div class="footer-logo" onclick="showPage('main')"><img src="Primary Logo.png" alt="Lucky Aura Origins logo" class="brand-logo-img"/><span class="brand-text">Lucky Aura <span style="color:var(--turmeric)">Origins</span></span></div>
+  <!-- TODO: add IEC, FSSAI and GST numbers here once ready, e.g. "IEC: XXXXXXXXXX · FSSAI: XXXXXXXXXXXXXX · GSTIN: XXXXXXXXXXXXXXX" -->
+  <div class="footer-mid">Lucky Aura Origins LLP <br>121/1, AKD Garden, Reddiyarpalayam, <br> Pondicherry, India <br><a href="#guide" onclick="navTo(event,'guide')">Importer's Guide</a><br>© 2026 Lucky Aura Origins. All rights reserved.</div>
   <div class="footer-right">
     <a href="mailto:export@luckyauraorigins.com" style="color:var(--turmeric);text-decoration:none;display:block;margin-bottom:4px;">export@luckyauraorigins.com</a>
     <a href="https://wa.me/919940111809" style="color:rgba(247,242,232,0.35);text-decoration:none;">+91 9940 111 809</a>
   </div>
 </footer>
-
+ 
 </div><!-- end #page-main -->
 
 
@@ -570,95 +625,99 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
      PAGE: ORDERS
 ═══════════════════════════════════════════ -->
 <div id="page-orders" class="hidden">
-
+ 
   <!-- Hero banner -->
   <div class="orders-page-hero">
     <div class="orders-page-hero-inner">
-      <div class="page-eyebrow">Orders & Pricing</div>
-      <h1>Export <em>Pricing</em><br>& Quote Request</h1>
-      <p>Indicative FOB rates for Turmeric and Moringa. Use the estimator to calculate your order value, then submit a quote request — we respond within 24 hours with a formal quotation.</p>
+      <div class="page-eyebrow">Orders & Quotes</div>
+      <h1>Products <em>&</em><br>Quote Request</h1>
+      <p>Explore our Turmeric and Moringa range, then send a quote request. We respond within 24 hours with a formal quotation based on your product, quantity and destination.</p>
       <div class="hero-badge-pills">
-        <div class="hero-badge-pill">FOB · CIF · DAP</div>
-        <div class="hero-badge-pill">NABL Lab Tested</div>
         <div class="hero-badge-pill">24-hr Quote Turnaround</div>
-        <div class="hero-badge-pill">Flexible MOQ</div>
+        <div class="hero-badge-pill">Sample Packs Available</div>
+        <div class="hero-badge-pill">Trial Orders Welcome</div>
+        <div class="hero-badge-pill">Private Label</div>
       </div>
     </div>
   </div>
 
-  <!-- Tabs -->
+   <!-- Tabs -->
   <div class="orders-tabs-bar">
-    <button class="otab active" onclick="switchOrderTab('pricing',this)">Pricing & Orders</button>
+    <button class="otab active" onclick="switchOrderTab('pricing',this)">Products & Quote</button>
     <button class="otab" onclick="switchOrderTab('terms',this)">Payment & Terms</button>
   </div>
 
-  <!-- TAB: Pricing -->
+   <!-- TAB: Products & Quote -->
   <div class="otab-panel active" id="otab-pricing">
-    <div class="section-label">Current Export Rates</div>
-    <h2 class="section-heading">FOB Pricing & <em>Minimum Orders</em></h2>
-    <p class="section-sub">All prices are indicative FOB rates as of 2025. Final pricing confirmed after sample approval. Bulk discounts available above 5 MT.</p>
+    <div class="section-label">Our Products</div>
+    <h2 class="section-heading">Product Benefits & <em>Quote Request</em></h2>
+    <p class="section-sub">Pricing is quoted per inquiry and confirmed after sample approval. Share your product, quantity and destination and we will do the rest.</p>
     <div class="price-layout">
       <div>
         <table class="price-table reveal">
-          <thead><tr><th>Product</th>
+          <thead>
+            <tr><th>Product</th><th>Benefits</th></tr>
+          </thead>
           <tbody>
             <tr>
-              <td>🌿 Turmeric Fingers<div class="price-moq">Erode, polished · HS 0910</div></td>
+              <td>🌿 Turmeric Fingers<div class="price-moq">Erode, Tamil Nadu, India · polished</div></td>
+              <td><button type="button" class="benefit-btn" onclick="openBenefits('turmeric-fingers')">View Benefits</button></td>
             </tr>
             <tr>
-              <td>🌿 Turmeric Powder<div class="price-moq">Erode, 3–5% curcumin · HS 0910</div></td>
+              <td>🌿 Turmeric Powder<div class="price-moq">Erode, Tamil Nadu, India · 3–5% curcumin</div></td>
+              <td><button type="button" class="benefit-btn" onclick="openBenefits('turmeric-powder')">View Benefits</button></td>
             </tr>
             <tr>
-              <td>🌱 Moringa Powder<div class="price-moq">Trichy &amp; Salem · HS 2106</div></td>
+              <td>🌱 Moringa Powder<div class="price-moq">South Tamil Nadu, India · nutrient-rich</div></td>
+              <td><button type="button" class="benefit-btn" onclick="openBenefits('moringa-powder')">View Benefits</button></td>
             </tr>
             <tr>
-              <td>🌱 Moringa Seeds<div class="price-moq">Trichy, dried &amp; cleaned · HS 2106</div></td>
+              <td>🌱 Moringa Seeds<div class="price-moq">South Tamil Nadu, India · dried &amp; cleaned</div></td>
+              <td><button type="button" class="benefit-btn" onclick="openBenefits('moringa-seeds')">View Benefits</button></td>
             </tr>
           </tbody>
         </table>
-        <p class="disclaimer-note">* Prices are indicative FOB rates as of 2025 and subject to market fluctuation. Final price confirmed after sample approval. Packaging, certification, and freight quoted separately.</p>
+        <p class="disclaimer-note">* Pricing is quoted per inquiry and confirmed after sample approval. Packaging, certification and freight are quoted separately, and prices are subject to market fluctuation.</p>
       </div>
       <div class="price-sidebar">
-         <div class="sidebar-card reveal">
-  <div class="sidebar-card-title">📝 Quote Request</div>
-  <p>Select a product and enter the quantity you need. We reply with a formal quotation within 24 hours.</p>
-  <div style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
-    <select class="est-input" id="est-product">
-      <option value="">— Select product —</option>
-      <option>Turmeric Fingers</option>
-      <option>Turmeric Powder</option>
-      <option>Moringa Powder</option>
-      <option>Moringa Seeds</option>
-    </select>
-    <input type="number" class="est-input" id="est-kgs" placeholder="Quantity in KG" min="1"/>
-    <input type="text" class="est-input" id="q-name" placeholder="Your name *"/>
-    <input type="email" class="est-input" id="q-email" placeholder="Email *"/>
-    <input type="text" class="est-input" id="q-country" placeholder="Destination country"/>
-    <textarea class="est-input" id="q-message" rows="3" placeholder="Packaging, destination port, quality specs…"></textarea>
-    <p class="disclaimer-note">Final quote includes packaging, certification &amp; freight.</p>
-  </div>
-  <button type="button" class="sidebar-cta" id="q-btn" onclick="handleOrderInquiry()">Send an Inquiry →</button>
-  <div id="q-success" style="display:none;margin-top:14px;padding:14px 16px;background:rgba(74,94,58,0.12);border:1px solid var(--sage);color:var(--earth);font-size:13px;line-height:1.6;"></div>
-</div>
-
-                <div class="sidebar-card reveal">
+        <div class="sidebar-card reveal">
+          <div class="sidebar-card-title">📝 Quote Request</div>
+          <p>Select a product and enter the quantity you need. We will send you a formal quotation.</p>
+          <div style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+            <select class="est-input" id="est-product" aria-label="Product">
+              <option value="">— Select product —</option>
+              <option>Turmeric Fingers</option>
+              <option>Turmeric Powder</option>
+              <option>Moringa Powder</option>
+              <option>Moringa Seeds</option>
+            </select>
+            <input type="number" class="est-input" id="est-kgs" placeholder="Quantity in KG" min="1" aria-label="Quantity in kilograms"/>
+            <input type="text" class="est-input" id="q-name" placeholder="Your name *" aria-label="Your name"/>
+            <input type="email" class="est-input" id="q-email" placeholder="Email *" aria-label="Email"/>
+            <input type="text" class="est-input" id="q-country" placeholder="Destination country" aria-label="Destination country"/>
+            <textarea class="est-input" id="q-message" rows="3" placeholder="Packaging, destination port, quality specs…" aria-label="Message"></textarea>
+          </div>
+          <button type="button" class="sidebar-cta" id="q-btn" onclick="handleOrderInquiry()">Send Inquiry →</button>
+          <div id="q-success" style="display:none;margin-top:14px;padding:14px 16px;background:rgba(74,94,58,0.12);border:1px solid var(--sage);color:var(--earth);font-size:13px;line-height:1.6;"></div>
+        </div>
+ 
+        <div class="sidebar-card reveal">
           <div class="sidebar-card-title">📦 What's Included</div>
           <ul class="sidebar-list">
             <li>NABL-certified lab COA for every batch</li>
-            <li>Phytosanitary certificate from Govt. of India</li>
+            <li>Phytosanitary certificate from the Government of India</li>
             <li>Certificate of Origin (COO)</li>
             <li>FSSAI &amp; APEDA compliance documentation</li>
-            <li>Commercial invoice, packing list, B/L support</li>
+            <li>Commercial invoice, packing list and B/L support</li>
             <li>LUT / GST zero-rated export</li>
           </ul>
         </div>
         <div class="sidebar-card reveal">
           <div class="sidebar-card-title">🚢 Incoterms We Offer</div>
-
           <div class="incoterm-grid">
-            <div class="incoterm-item"><div class="incoterm-code">FOB — Free On Board</div><div class="incoterm-desc">Risk transfers at Indian port. Best for experienced importers with their own freight forwarder.</div></div>
-            <div class="incoterm-item"><div class="incoterm-code">CIF — Cost Insurance Freight</div><div class="incoterm-desc">Based on Requirements.</div></div>
-            <div class="incoterm-item"><div class="incoterm-code">DAP — Delivered At Place</div><div class="incoterm-desc">We deliver to your place.Based on Orders/Requirements.</div></div>
+            <div class="incoterm-item"><div class="incoterm-code">FOB — Free On Board</div><div class="incoterm-desc">Risk transfers at the Indian port. Best for experienced importers with their own freight forwarder.</div></div>
+            <div class="incoterm-item"><div class="incoterm-code">CIF — Cost, Insurance &amp; Freight</div><div class="incoterm-desc">We arrange freight and insurance to your destination port.</div></div>
+            <div class="incoterm-item"><div class="incoterm-code">DAP — Delivered At Place</div><div class="incoterm-desc">We deliver to your named destination, subject to order size and requirements.</div></div>
           </div>
         </div>
       </div>
@@ -673,48 +732,61 @@ footer{background:var(--dark-mid);padding:40px 60px;display:flex;justify-content
     <p class="section-sub">Standard export trading terms we follow. All terms are negotiable for long-term buyers and regular importers.</p>
     <div class="terms-grid">
       <div class="term-card reveal"><div class="term-icon">💳</div><div class="term-title">Payment Terms</div><div class="term-body"><strong>New buyers:</strong> 100% advance (T/T wire transfer) or Letter of Credit (LC).</div></div>
-      <div class="term-card reveal"><div class="term-icon">📋</div><div class="term-title">Order Lead Time</div><div class="term-body"><strong>Samples:</strong> Dispatched within 24 hours of payment.<br><br><strong>Bulk orders/Packaging & Labeling:</strong> 1-2 working days from order confirmation, depending on product and quantity.</div></div>
-      <div class="term-card reveal"><div class="term-icon">🧾</div><div class="term-title">Export Documents</div><div class="term-body">Standard shipment set includes: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin, Phytosanitary Certificate, NABL COA, FSSAI certificate, and any destination-specific certificates as required.</div></div>
-      <div class="term-card reveal"><div class="term-icon">📦</div><div class="term-title">Packaging Standards</div><div class="term-body">Default: food-grade multi-layer PP/HDPE bags (25 kg), packed in corrugated cartons. Vacuum-sealed and moisture-proof on request.</div></div>
-      <div class="term-card reveal"><div class="term-icon">🔬</div><div class="term-title">Quality Assurance</div><div class="term-body">Every batch tested at NABL-accredited labs for: pesticide residues, aflatoxins, moisture content, ash content, and heavy metals. COA shared before shipment.</div></div>
-      <div class="term-card reveal"><div class="term-icon">🛡️</div><div class="term-title">Dispute & Returns</div><div class="term-body">Quality claims must be raised within 14 days of port arrival, with NABL lab report from destination country. Claims are handled case-by-case with partial credit or replacement shipment.</div></div>
+      <div class="term-card reveal"><div class="term-icon">📋</div><div class="term-title">Order Lead Time</div><div class="term-body"><strong>Samples:</strong> Dispatched within 24 hours of payment.<br><br><strong>Bulk orders (including packaging and labelling):</strong> 1–2 working days from order confirmation, depending on product and quantity.</div></div>
+      <div class="term-card reveal"><div class="term-icon">🧾</div><div class="term-title">Export Documents</div><div class="term-body">Every shipment includes the standard document set listed in our <a onclick="showPage('main');setTimeout(()=>document.getElementById('guide').scrollIntoView({behavior:'smooth'}),60)">Importer's Guide</a>, plus any destination-specific certificates required.</div></div>
+      <div class="term-card reveal"><div class="term-icon">📦</div><div class="term-title">Packaging Standards</div><div class="term-body">Default: food-grade multi-layer PP/HDPE bags (25 kg) packed in corrugated cartons. Vacuum-sealed and moisture-proof packing, as well as private label and retail packs, are available on request.</div></div>
+      <div class="term-card reveal"><div class="term-icon">🔬</div><div class="term-title">Quality Assurance</div><div class="term-body">Every batch is tested at NABL-accredited labs for pesticide residues, aflatoxins, moisture content, ash content and heavy metals. The COA is shared before shipment.</div></div>
+      <div class="term-card reveal"><div class="term-icon">🛡️</div><div class="term-title">Disputes & Returns</div><div class="term-body">Quality claims must be raised within 14 days of port arrival, with a report from an ISO/IEC 17025-accredited lab in the destination country. Claims are handled case by case, with partial credit or a replacement shipment.</div></div>
     </div>
   </div>
-
+ 
   <!-- Orders Footer -->
   <footer>
     <div class="footer-logo" onclick="showPage('main')"><img src="Primary Logo.png" alt="Lucky Aura Origins logo" class="brand-logo-img"/><span class="brand-text">Lucky Aura <span style="color:var(--turmeric)">Origins</span></span></div>
-    <div class="footer-mid">Lucky Aura Origins <br>121/1, AKD Garden, Reddiyarpalayam, <br> Pondicherry, India <br>IEC Registered · FSSAI · APEDA · Spices Board<br>© 2026 Lucky Aura Origins. All rights reserved.</div>
+    <div class="footer-mid">Lucky Aura Origins LLP <br>121/1, AKD Garden, Reddiyarpalayam, <br> Pondicherry, India <br>© 2026 Lucky Aura Origins. All rights reserved.</div>
     <div class="footer-right">
       <a href="mailto:export@luckyauraorigins.com" style="color:var(--turmeric);text-decoration:none;display:block;margin-bottom:4px;">export@luckyauraorigins.com</a>
       <a href="https://wa.me/919940111809" style="color:rgba(247,242,232,0.35);text-decoration:none;">+91 9940 111 809</a>
     </div>
   </footer>
-
+ 
 </div><!-- end #page-orders -->
 
-
+<!-- BENEFITS MODAL -->
+<div class="benefit-overlay" id="benefit-overlay" onclick="if(event.target===this)closeBenefits()">
+  <div class="benefit-modal" role="dialog" aria-modal="true" aria-labelledby="benefit-title">
+    <button type="button" class="benefit-close" onclick="closeBenefits()" aria-label="Close">×</button>
+    <div class="benefit-eyebrow" id="benefit-eyebrow"></div>
+    <h3 class="benefit-title" id="benefit-title"></h3>
+    <ul class="benefit-list" id="benefit-list"></ul>
+    <p class="benefit-note">Information is general and not a medical claim. Labelling and permitted claims vary by destination market.</p>
+    <button type="button" class="sidebar-cta" onclick="closeBenefits()">Close</button>
+  </div>
+</div>
+ 
 <!-- FIXED BUTTONS (always visible) -->
-<button class="quote-float" onclick="showPage('orders','pricing')">Pricing & Orders</button>
-<a class="wa-float" href="https://wa.me/919940111809?text=Hi%20Lucky Aura%20Origins%20Exports%2C%20I%20am%20interested%20in%20your%20products." target="_blank" title="Chat on WhatsApp">💬</a>
-
+<button class="quote-float" onclick="showPage('orders','pricing')">Request a Quote</button>
+<a class="wa-float" href="https://wa.me/919940111809?text=Hi%20Lucky%20Aura%20Origins%2C%20I%20am%20interested%20in%20your%20products." target="_blank" rel="noopener" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">💬</a>
 
 <script>
 /* ── PAGE SWITCHER ── */
-function showPage(page, tab){
+function showPage(page, tab, noScroll){
   const main=document.getElementById('page-main');
   const orders=document.getElementById('page-orders');
   const navMainLinks=document.getElementById('nav-main-links');
   const navBackBtn=document.getElementById('nav-back-btn');
   const navCta=document.querySelector('.nav-cta');
-
+  const mobToggle=document.getElementById('mob-toggle');
+ 
   if(page==='orders'){
     main.classList.add('hidden');
     orders.classList.remove('hidden');
+    closeMobNav();
     navMainLinks.style.display='none';
     navBackBtn.style.display='block';
     navCta.style.display='none';
-    document.title='Orders & Pricing — Lucky Aura Origins';
+    mobToggle.style.display='none';
+    document.title='Orders & Quotes — Lucky Aura Origins';
     window.scrollTo({top:0,behavior:'smooth'});
     // Switch to requested tab if specified
     const t = (tab==='terms') ? 'terms' : 'pricing';
@@ -734,11 +806,24 @@ function showPage(page, tab){
     navMainLinks.style.display='';
     navBackBtn.style.display='none';
     navCta.style.display='';
+    mobToggle.style.display='';
     document.title='Lucky Aura Origins — Premium Turmeric & Moringa from South India';
-    window.scrollTo({top:0,behavior:'smooth'});
+    if(!noScroll) window.scrollTo({top:0,behavior:'smooth'});
   }
 }
-
+ 
+/* ── SECTION NAVIGATION (works from both pages) ── */
+function navTo(e,id){
+  if(e) e.preventDefault();
+  const ordersOpen=!document.getElementById('page-orders').classList.contains('hidden');
+  closeMobNav();
+  if(ordersOpen) showPage('main',null,true);
+  setTimeout(()=>{
+    const el=document.getElementById(id);
+    if(el) el.scrollIntoView({behavior:'smooth'});
+  }, ordersOpen?60:0);
+}
+ 
 /* ── ORDERS TAB SWITCHER ── */
 function switchOrderTab(id,btn){
   document.querySelectorAll('.otab-panel').forEach(p=>p.classList.remove('active'));
@@ -747,21 +832,21 @@ function switchOrderTab(id,btn){
   btn.classList.add('active');
   window.scrollTo({top:document.querySelector('.orders-tabs-bar').offsetTop-62,behavior:'smooth'});
 }
-
-
+ 
+ 
 /* ── CONTACT FORM SUBMIT ── */
 async function handleSubmit(){
   const v = id => document.getElementById(id).value.trim();
   const name=v('f-name'), email=v('f-email'), company=v('f-company'),
         country=v('f-country'), product=v('f-product'), message=v('f-message');
-
+ 
   if(!name||!email){alert('Please fill in your name and email.');return;}
-
+ 
   const btn=document.querySelector('.form-submit');
   const box=document.getElementById('form-success');
   btn.disabled=true; btn.textContent='Sending…';
-
-    // 2) Email via Web3Forms
+ 
+  // Email via Web3Forms
   try{
     const res = await fetch('https://api.web3forms.com/submit',{
       method:'POST',
@@ -777,7 +862,7 @@ async function handleSubmit(){
     const data = await res.json();
     if(!data.success) throw new Error(data.message);
     box.style.display='block';
-    box.textContent="✅ Thank you for reaching out. We will review your inquiry and respond within 24 hours. For urgent matters, please contact us via WhatsApp at +91 9940 111 809.";
+    box.textContent="✅ Thank you for reaching out. We will review your inquiry and respond within 24 hours. For urgent matters, please contact us on WhatsApp at +91 9940 111 809.";
     document.querySelectorAll('#contact .form-input, #contact .form-textarea').forEach(el=>el.value='');
   }catch(err){
     box.style.display='block';
@@ -785,27 +870,27 @@ async function handleSubmit(){
   }
   btn.disabled=false; btn.textContent='Send Inquiry →';
 }
-
+ 
 /* ── ORDERS PAGE INQUIRY ── */
 async function handleOrderInquiry(){
   const v = id => document.getElementById(id).value.trim();
   const product=v('est-product'), kgs=v('est-kgs');
   const name=v('q-name'), email=v('q-email'), country=v('q-country'), extra=v('q-message');
-
+ 
   if(!product || !kgs){alert('Please select a product and enter the quantity.');return;}
   if(!name || !email){alert('Please fill in your name and email.');return;}
-
+ 
   const message =
 `Product: ${product}
 Quantity: ${kgs} kg
 Destination: ${country || '-'}
-
+ 
 ${extra || '(no additional message)'}`;
-
+ 
   const btn = document.getElementById('q-btn');
   const box = document.getElementById('q-success');
   btn.disabled = true; btn.textContent = 'Sending…';
-
+ 
   try{
     const res = await fetch('https://api.web3forms.com/submit',{
       method:'POST',
@@ -828,28 +913,100 @@ ${extra || '(no additional message)'}`;
     box.style.display='block';
     box.textContent='⚠️ Could not send ('+(err.message||'network error')+'). Please email export@luckyauraorigins.com or use WhatsApp.';
   }
-  btn.disabled=false; btn.textContent='Send an Inquiry →';
+  btn.disabled=false; btn.textContent='Send Inquiry →';
 }
-
+ 
+/* ── PRODUCT BENEFITS ── */
+const BENEFITS = {
+  'turmeric-fingers': {
+    origin: 'Erode, Tamil Nadu',
+    title: 'Turmeric Fingers',
+    items: [
+      'Natural source of curcumin, the key active compound in turmeric',
+      'Whole polished fingers keep flavour, colour and aroma until grinding',
+      'Ideal for spice processors who grind to their own specification',
+      'Longer shelf life than powder when stored dry',
+      'Traditionally used in food, wellness and Ayurvedic products'
+    ]
+  },
+  'turmeric-powder': {
+    origin: 'Erode, Tamil Nadu',
+    title: 'Turmeric Powder',
+    items: [
+      'Curcumin content of 3–5% as per lab report',
+      'Deep golden colour for food, spice blends and sauces',
+      'Ready to use for nutraceutical, capsule and supplement brands',
+      'Traditionally valued for antioxidant properties',
+      'COA provided with every batch'
+    ]
+  },
+  'moringa-powder': {
+    origin: 'South Tamil Nadu',
+    title: 'Moringa Powder',
+    items: [
+      'Naturally rich in iron, vitamin C and plant protein',
+      'Contains antioxidants and essential amino acids',
+      'Works in smoothies, teas, capsules, snacks and baked goods',
+      'A popular superfood ingredient in Europe and GCC markets',
+      'Halal documentation available'
+    ]
+  },
+  'moringa-seeds': {
+    origin: 'South Tamil Nadu',
+    title: 'Moringa Seeds',
+    items: [
+      'Dried and cleaned, ready for further processing',
+      'Source material for moringa oil and seed-based products',
+      'Traditionally used in food and wellness applications',
+      'Suited to wholesalers, oil extractors and cosmetic-ingredient makers',
+      'Lab reports available on request'
+    ]
+  }
+};
+ 
+function openBenefits(key){
+  const b = BENEFITS[key];
+  if(!b) return;
+  document.getElementById('benefit-eyebrow').textContent = b.origin;
+  document.getElementById('benefit-title').textContent = b.title;
+  document.getElementById('benefit-list').innerHTML = b.items.map(i => '<li>'+i+'</li>').join('');
+  document.getElementById('benefit-overlay').classList.add('open');
+}
+function closeBenefits(){
+  document.getElementById('benefit-overlay').classList.remove('open');
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeBenefits(); });
+ 
 /* ── MOBILE NAV ── */
+function closeMobNav(){
+  const nl=document.getElementById('nav-main-links');
+  const tg=document.getElementById('mob-toggle');
+  nl.style.cssText='';
+  nl.dataset.open='0';
+  // keep the main links hidden while the orders page is open
+  if(!document.getElementById('page-orders').classList.contains('hidden')) nl.style.display='none';
+  if(tg) tg.setAttribute('aria-expanded','false');
+}
 function toggleMobNav(){
-  const nl=document.querySelector('.nav-links');
-  const open=nl.dataset.open==='1';
-  if(open){nl.style.display='none';nl.dataset.open='0';}
+  const nl=document.getElementById('nav-main-links');
+  const tg=document.getElementById('mob-toggle');
+  if(nl.dataset.open==='1'){ closeMobNav(); }
   else{
     Object.assign(nl.style,{display:'flex',flexDirection:'column',position:'fixed',top:'62px',left:'0',right:'0',background:'var(--warm-white)',padding:'20px 24px',borderBottom:'1px solid var(--border)',gap:'20px',zIndex:'99'});
     nl.dataset.open='1';
+    tg.setAttribute('aria-expanded','true');
   }
-} 
-
+}
+ 
 /* ── SCROLL REVEAL ── */
 const revealObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
-
+ 
 /* ── NAV SHRINK ── */
 window.addEventListener('scroll',()=>{
+  if(window.innerWidth<=900) return;
   const nav=document.querySelector('nav');
   nav.style.padding=window.scrollY>40?'14px 60px':'20px 60px';
 });
